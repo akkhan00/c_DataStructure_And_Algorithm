@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void printLi(int size, int compactMatrix[][size]);
+void printArray(int size, int compactMatrix[][size]);
 
 int main(){
   // Assume 4x5 matrix
@@ -32,12 +32,12 @@ int main(){
   }
 
   // print the compactMatrix
-  printLi(size, compactMatrix);
+  printArray(size, compactMatrix);
   
   return 0;
 }
 
-void printLi(int size, int compactMatrix[][size]){
+void printArray(int size, int compactMatrix[][size]){
 for (int i = 0; i<3; i++){
     for (int j = 0; j<size; j++){
       if(i == 0 && j == 0)
